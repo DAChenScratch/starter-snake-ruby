@@ -1,0 +1,40 @@
+my_snake:
+  name: "Ereptile Disruption"
+  st_method: "B"
+  color: "ff6666"
+  head_type: "pixel"
+  head_url: "https://media.giphy.com/media/IB9foBA4PVkKA/giphy.gif"
+  tail_type: "pixel"
+grid:
+  enemy_head: "▓"
+  enemy_body: "█"
+  me_head: "▒"
+  me_body: "█"
+  food: "♥"
+wall:
+  degree: <%= "7" %>
+  weight: <%= "1" %>
+tree:
+  levels: <%= "9" %> 
+  min_threshold: <%= "0.6" %>
+  threshold: <%= "1" %>
+snake:
+  me:
+    body:
+      degree: <%= "2" %>
+      weight: <%= "1" %>
+    head:
+      degree: <%= "2" %>
+      weight: <%= "-1" %>
+  enemy:
+    body:
+      degree: <%= "5" %>
+      weight: <%= "1" %>
+    head:
+      degree: <%= "10" %>
+      weight: <%= "0.2" %>
+    length_weight: <%= "1" %>
+food: 
+  mult: <%= "2" %>
+  weight: <%= "-2" %>
+  degree: <%= "12" %>
